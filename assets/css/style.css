@@ -1,3 +1,7 @@
+*{
+    
+    color:white;
+}
 
 
 body{
@@ -7,14 +11,15 @@ body{
     overflow: hidden;
 }
 
-div{
+.jumbotron{
+    height: 200px;
     background-color: black;
 }
 
 .content-wrapper{
     position: relative;
     margin: 0 auto;
-    width:100%;
+    width: 100%;
 }
 
 h1{
@@ -22,11 +27,10 @@ h1{
     
 }
 
-img{
+.card{
     width: 24%;
-    height: 150px;
-    box-sizing: border-box;
-        
+    border-style: hidden;
+    height: 20px;
 }
 
 .btn{
@@ -38,3 +42,10 @@ img{
     color: red;
 }
 
+.geode, .diamond, .ice, .amethyst{
+    background-color: black;
+    color:black;
+    height:100%;
+    border-style: hidden;
+    text-decoration: none;
+}
