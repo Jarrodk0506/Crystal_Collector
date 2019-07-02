@@ -32,15 +32,15 @@ console.log(iceValue);
 console.log(diamondValue);
 console.log(target);
 
-////////// NEED HELP EVALUATING SCORE TO TARGET ///////////
+////////// NEED: UPDATING WINS DISPLAY ///////////
 
 //geode button
 $('.geode').on('click', function(){
         score = parseInt(score) + parseInt(geodeValue);
         var scoreDisplay = $('#score').text(score);
-        if(score === target){
+        if(score == target){
             alert("You win!");
-            wins++
+            winDisplay = wins++;
         }
         else if(score > target){
             alert("You lose!");
@@ -51,9 +51,9 @@ $('.geode').on('click', function(){
 $('.amethyst').on('click', function(){     
         score = parseInt(score) + parseInt(amethystValue);
         var scoreDisplay = $('#score').text(score);
-        if(score === target){
+        if(score == target){
             alert("You win!");
-            wins++
+            winDisplay = wins++;
         }
         else if(score > target){
             alert("You lose!");
@@ -64,9 +64,9 @@ $('.amethyst').on('click', function(){
 $('.ice').on('click', function(){
     score = parseInt(score) + parseInt(iceValue);
     var scoreDisplay = $('#score').text(score);
-    if(score === target){
+    if(score == target){
         alert("You win!");
-        wins++
+        winDisplay = wins++;
     }
     else if(score > target){
         alert("You lose!");
@@ -77,9 +77,9 @@ $('.ice').on('click', function(){
 $('.diamond').on('click', function(){ 
     score = parseInt(score) + parseInt(diamondValue);
     var scoreDisplay = $('#score').text(score);
-    if(score === target){
+    if(score == target){
         alert("You win!");
-        wins++
+        winDisplay = wins++;
     }
     else if(score > target){
         alert("You lose!");
