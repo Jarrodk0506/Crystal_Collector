@@ -27,6 +27,10 @@ h1{
     
 }
 
+p{
+    text-align: center;
+}
+
 .card{
     width: 24%;
     border-style: hidden;
